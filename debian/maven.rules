@@ -1,0 +1,6 @@
+junit junit * s/.*/4.x/ * *
+org.codehaus.plexus plexus-container-default * s/.*/1.5.5/ * *
+org.apache.maven s/maven-project/maven-core/ * s/.*/3.x/ * *
+org.apache.maven maven-* * s/.*/3.x/ * *
+s/org.apache.maven.shared/org.apache.maven.plugin-testing/ maven-plugin-testing-harness * s/.*/debian/ * *
+s/org.mortbay.jetty/javax.servlet/ s/servlet-api-2.5/javax.servlet-api/ * s/.*/3.1/ * *

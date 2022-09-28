@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+JAVA_LIBS=/usr/share/java
+
+java -cp $JAVA_LIBS/cobertura.jar net.sourceforge.cobertura.check.CheckCoverageMain $*

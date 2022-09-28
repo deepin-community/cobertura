@@ -1,0 +1,52 @@
+Source: cobertura
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Emmanuel Bourg <ebourg@apache.org>
+Build-Depends:
+ ant,
+ ant-optional,
+ debhelper (>= 11~),
+ default-jdk,
+ docbook-to-man,
+ javahelper,
+ junit4,
+ libasm-java (>= 5.0),
+ libjavacc-maven-plugin-java,
+ liblogback-java,
+ libmaven-bundle-plugin-java,
+ libmaven-dependency-plugin-java,
+ libmaven-enforcer-plugin-java,
+ libmaven-plugin-testing-java,
+ liboro-java,
+ libservlet3.1-java,
+ maven-debian-helper (>= 2.2)
+Standards-Version: 4.1.5
+Vcs-Browser: https://salsa.debian.org/java-team/cobertura
+Vcs-Git: https://salsa.debian.org/java-team/cobertura.git
+Homepage: https://cobertura.github.io/cobertura/
+
+Package: libcobertura-java
+Architecture: all
+Depends: ${maven:Depends}, ${misc:Depends}
+Suggests: ${maven:OptionalDepends}
+Description: java library that calculates the percentage of code accessed by tests
+ Library that measures test coverage by instrumenting a Java code base and
+ watching which lines of code are and are not executed as the test suite runs.
+ In addition to identifying untested code and locating bugs, Cobertura can
+ optimize code by flagging dead, unreachable code and can provide insights
+ into how an API operates in practice. It is based on jcoverage.
+
+Package: cobertura
+Architecture: all
+Depends:
+ default-jre-headless (>= 1:1.6) | java6-runtime-headless,
+ libcobertura-java (= ${binary:Version}),
+ ${misc:Depends}
+Recommends: junit4
+Description: java tool that calculates the percentage of code accessed by tests
+ Tool that measures test coverage by instrumenting a Java code base and watching
+ which lines of code are and are not executed as the test suite runs. In
+ addition to identifying untested code and locating bugs, Cobertura can
+ optimize code by flagging dead, unreachable code and can provide insights
+ into how an API operates in practice. It is based on jcoverage.

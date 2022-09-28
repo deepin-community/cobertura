@@ -1,0 +1,3 @@
+version=3
+opts=mode=git,compression=xz,repack,dversionmangle=s/\+dfsg//,uversionmangle=s/_/./g \
+https://github.com/cobertura/cobertura refs/tags/(?:v|cobertura-)([\d\._]+)

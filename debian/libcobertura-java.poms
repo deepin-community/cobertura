@@ -1,0 +1,15 @@
+pom.xml --no-parent --has-package-version
+cobertura/pom.xml --no-parent --has-package-version
+cobertura-runtime/pom.xml --no-parent --has-package-version
+codestyle/pom.xml --ignore
+conversion/pom.xml --ignore
+conversion/conversion-api/pom.xml  --ignore
+interaction/pom.xml --has-package-version
+interaction/annotations/pom.xml --has-package-version
+interaction/annotations/annotations-api/pom.xml --has-package-version
+metrics/pom.xml --ignore
+metrics/metrics-api/pom.xml --ignore
+metrics/metrics-model/pom.xml --ignore
+poms/pom.xml --has-package-version
+poms/cobertura-api-parent/pom.xml --has-package-version
+poms/cobertura-parent/pom.xml --no-parent --has-package-version

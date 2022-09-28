@@ -1,0 +1,93 @@
+cobertura (2.1.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Correct name of README file (Closes: #903328)
+  * Bump Standards-Version to 4.1.5
+  * Update Vcs fields for migration from Alioth -> Salsa
+  * Use https for Homepage link
+  * Use debhelper 11
+
+ -- tony mancill <tmancill@debian.org>  Sun, 15 Jul 2018 10:13:39 -0700
+
+cobertura (2.1.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Miguel Landaeta ]
+  * Remove myself from uploaders list. (Closes: #871844).
+  * Update watch file.
+  * Update copyright info to format 1.0.
+  * Simplify d/rules.
+  * Bump DH compat level to 10.
+  * Update Vcs-Git and Homepage fields.
+  * Wrap and sort dependency lists.
+
+  [ Emmanuel Bourg ]
+  * New upstream release
+    - Build with Maven instead of Ant
+    - Updated the man pages
+    - Depend on libasm-java (>= 5.0) instead of libasm3-java (Closes: #800863)
+    - Depend on liblogback-java instead of liblog4j1.2-java
+    - Depend on junit4 instead of junit
+    - Require Java 6 or higher for the command line tools
+    - New dependency on ant-optional
+    - Updated the shell scripts
+    - Refreshed debian/copyright
+  * Modified the watch file to catch the old releases
+  * Standards-Version updated to 4.1.0
+  * Removed the -java-doc package
+  * Fixed a typo in the man pages
+  * Added myself to the uploaders list
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 27 Sep 2017 10:12:24 +0200
+
+cobertura (1.9.4.1+dfsg-4) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control:
+    - Build depend on libservlet3.1-java instead of libservlet2.5-java
+    - Removed the dependency on libservlet2.5-java for libcobertura-java
+    - Standards-Version updated to 3.9.5 (no changes)
+    - Use canonical URLs for the Vcs-* fields
+  * Switch to debhelper level 9
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Tue, 09 Sep 2014 23:55:14 +0200
+
+cobertura (1.9.4.1+dfsg-3) unstable; urgency=low
+
+  [ Miguel Landaeta ]
+  * debian/control: Fixed typo in Vcs-Git field.
+  * Bump Standards-Version to 3.9.2. No changes were required.
+  * Add mh_clean call to clean target.
+  * Drop versioned dependencies since they are satisfied even in stable.
+
+  [ James Page ]
+  * Fix FTBFS with OpenJDK 7 (LP: #888927) (Closes: #651395):
+    - d/ant.properties: Set source/target to 1.5 for javac and javadoc 
+      ant tasks to ensure backwards compatibility and avoid Java 7 
+      encoding errors.
+    - d/rules: Use ant.properties when building. 
+
+ -- Miguel Landaeta <miguel@miguel.cc>  Thu, 08 Dec 2011 19:11:17 -0430
+
+cobertura (1.9.4.1+dfsg-2) unstable; urgency=low
+
+  * Now Build-Depends on libservlet2.5-java and add a missing Depends
+    on the same package. (Closes: #580842). 
+  * Simplify list of JRE dependences for cobertura and drop JRE dependences for
+    libcobertura-java as Java libraries are no longer required to depend on a
+    JVM.
+
+ -- Miguel Landaeta <miguel@miguel.cc>  Tue, 11 May 2010 19:21:46 -0430
+
+cobertura (1.9.4.1+dfsg-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Miguel Landaeta <miguel@miguel.cc>  Sat, 06 Mar 2010 22:36:44 -0430
+
+cobertura (1.9.3+dfsg-1) unstable; urgency=low
+
+  * Initial release (closes: #561177).
+
+ -- Miguel Landaeta <miguel@miguel.cc>  Tue, 26 Jan 2010 21:44:48 -0430

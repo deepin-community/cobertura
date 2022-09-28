@@ -1,0 +1,611 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: cobertura
+Source: http://cobertura.github.io/cobertura/
+Files-Excluded: */.classpath
+                */.project
+                */.settings
+                *.jar
+                */dtds/xhtml*
+                */src/site
+Comment: To clarify any doubt regarding the incompatibility between GPL-2+ and
+ Apache-1.1 licenses, upstream comments about this:
+ .
+ "The use of the Apache Software License in Cobertura is very straight forward.
+ Cobertura includes a set of ant tasks which can be used to call Cobertura. Ant
+ itself is licensed under the Apache Software License, Version 2.0. Because ant
+ tasks are loaded directly into the runtime of ant, and the GPL is incompatible
+ with all versions of the Apache Software License, ant tasks can not be
+ licensed under the GPL.
+ .
+ For this reason, the Cobertura ant tasks are licensed under the Apache
+ Software License, Version 1.1. And because these ant tasks are not
+ GPL-compatable, but the rest of Cobertura is GPL, when these ant tasks invoke
+ Cobertura they must do so by exec'ing a new JVM."
+ .
+ For more information about this, please visit upstream's website available at
+ http://cobertura.sourceforge.net/license.html.
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ .
+ Also add information on how to contact you by electronic and paper mail.
+ .
+ The full text of the GPL is distributed in /usr/share/common-licenses/GPL-2
+ on Debian systems.
+
+License: Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+     http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ The full text of the Apache License 2.0 is distributed in
+ /usr/share/common-licenses/Apache-2.0 on Debian systems.
+
+License: Apache-1.1
+ The Apache Software License, Version 1.1
+ .
+ Copyright (c) 2000 The Apache Software Foundation.  All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+ .
+ 3. The end-user documentation included with the redistribution, if
+    any, must include the following acknowlegement:
+       "This product includes software developed by the
+        Apache Software Foundation (http://www.apache.org/)."
+    Alternately, this acknowlegement may appear in the software itself,
+    if and wherever such third-party acknowlegements normally appear.
+ .
+ 4. The names "Ant" and "Apache Software
+    Foundation" must not be used to endorse or promote products derived
+    from this software without prior written permission. For written
+    permission, please contact apache@apache.org.
+ .
+ 5. Products derived from this software may not be called "Apache"
+    nor may "Apache" appear in their names without prior written
+    permission of the Apache Group.
+ .
+ THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED
+ WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED.  IN NO EVENT SHALL THE APACHE SOFTWARE FOUNDATION OR
+ ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF
+ USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+ ====================================================================
+ .
+ This software consists of voluntary contributions made by many
+ individuals on behalf of the Apache Software Foundation.  For more
+ information on the Apache Software Foundation, please see
+ <http://www.apache.org/>.
+ .
+ Portions of this software are based upon public domain software
+ originally written at the National Center for Supercomputing Applications,
+ University of Illinois, Urbana-Champaign.
+
+Files: *
+Copyright: 2005 Björn Beskow <bbeskow@users.sourceforge.net>
+           2008 Matt Cordes <mcordes@visa.com>
+           2005 Erik Dick <erdick@users.sourceforge.net>
+           2005 Mark Doliner <thekingant@users.sourceforge.net>
+           2005 Joakim Erdfelt <joakim@erdfelt.net>
+           2008 Julian Gamble <juliangamble@users.sourceforge.net>
+           2006 Dan Godfrey <dgodfrey99@users.sourceforge.net>
+           2008 Tri Bao Ho <hotribao@users.sourceforge.net>
+           2006 Naoki Iwami <naoki_iwami@users.sourceforge.net>
+           2003 jcoverage ltd.
+           2009 John Lewis <lewijw@users.sourceforge.net>
+           2005 Grzegorz Lukasik <hauserx@users.sourceforge.net>
+           2006 Jiri Mares <jirimares@users.sourceforge.net>
+           2009 Amit Nithianandan <ANithian@gmail.com>
+           2005 Olivier Parent <olivier-parent@users.sourceforge.net>
+           2009 Ed Randall <ed_randall@yahoo.com>
+           2005 Alex Ruiz <alruiz15@users.yahoo.com>
+           2005 James Seigel <cgul@users.sourceforge.net>
+           2005 Mark Sinke <marksinke@users.sourceforge.net>
+           2009 Charlie Squires <rockonword@users.sourceforge.net>
+           2005 Jeremy Thomerson <jthomerson@users.sourceforge.net>
+           2009 Chris van Es <cvanes@users.sourceforge.net>
+           2006 Srivathsan Varadarajan <vatsanv@users.sourceforge.net>
+           2005 Nathan Wilson <ndciwilson@users.sourceforge.net>
+           2005 Alexei Yudichev <sflexus@users.sourceforge.net>
+           2010 Piotr Tabor <piotr.tabor@gmail.com>
+License: GPL-2+
+
+Files: cobertura/src/test/resources/antLibrary/*
+Copyright: 2008 John Lewis
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/javancss/*
+Copyright: 2000 Chr. Clemens Lee <clemens@kclee.com>
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/javancss/ccl/*
+Copyright: 2000 Chr. Clemens Lee
+License: MPL-1.1 or GPL-2+ or LGPL-2.1
+
+License: MPL-1.1
+ On Debian systems, the full text of the MPL-1.1 license
+ can be found in the file '/usr/share/common-licenses/MPL-1.1'
+
+License: LGPL-2.1
+ On Debian systems, the full text of the LGPL-2.1 license
+ can be found in the file '/usr/share/common-licenses/LGPL-2.1'
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/ant/Regex.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/ant/CommonMatchingTask.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Joakim Erdfelt
+           2005 Grzegorz Lukasik
+           2006 Srivathsan Varadarajan
+           2008 Matt Cordes
+           2008 John Lewis
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/ant/ReportTask.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Jeremy Thomerson
+           2005 Grzegorz Lukasik
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/ant/IncludeClasses.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2006 John Lewis
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/ant/Ignore.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/ant/InstrumentTask.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Joakim Erdfelt
+           2005 Grzegorz Lukasik
+           2005 Alexei Yudichev
+           2006 John Lewis
+           2006 Jiri Mares
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/ant/CheckTask.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Nathan Wilson
+           2005 Alex Ruiz
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/ant/MergeTask.java
+Copyright: 2003 jcoverage ltd.
+          2005 Mark Doliner
+          2005 Joakim Erdfelt
+          2005 Grzegorz Lukasik
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/ant/AntUtil.java
+Copyright: 2006 Mark Doliner
+           2006 John Lewis
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/ant/ExcludeClasses.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2006 John Lewis
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/ant/IgnoreBranches.java
+Copyright: 2006 Jiri Mares
+License: Apache-1.1
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/check/PackageCoverage.java
+Copyright: 2005 Mark Doliner
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/check/Main.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Nathan Wilson
+           2009 Charlie Squires
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/check/CoverageRate.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/webapp/FlushCoberturaServlet.java
+Copyright: 2009 Amit Nithianandan
+           2009 John Lewis
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/resources/net/sourceforge/cobertura/webapp/web.xml
+Copyright: 2009 Amit Nithianandan
+License: Apache-2.0
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/reporting/xml/SummaryXMLReport.java
+Copyright: 2008 Julian Gamble
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/reporting/xml/XMLReport.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Jeremy Thomerson
+           2006 Jiri Mares
+           2008 Julian Gamble
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/reporting/Main.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Jeremy Thomerson
+           2005 Grzegorz Lukasik
+           2006 Dan Godfrey
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/reporting/ComplexityCalculator.java
+Copyright: 2005 Mark Doliner
+           2005 Jeremy Thomerson
+           2005 Grzegorz Lukasik
+           2008 Tri Bao Ho
+           2009 John Lewis
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/reporting/html/JavaToHtml.java
+Copyright: 2005 Mark Doliner
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/reporting/html/SourceFileDataBaseNameComparator.java
+Copyright: 2005 Mark Doliner
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/reporting/html/HTMLReport.java
+Copyright: 2005 Mark Doliner
+          2005 Grzegorz Lukasik
+          2005 Jeremy Thomerson
+          2006 Naoki Iwami
+          2009 Charlie Squires
+          2009 John Lewis
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/reporting/html/files/CopyFiles.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+License: GPL-2+
+
+Files: cobertura/src/main/resources/net/sourceforge/cobertura/reporting/html/files/sortabletable.js
+Copyright: 1998-2004 Erik Arvidsson
+License: WebFX-Non-Commercial-License or WebFX-Commercial-License or GPL-2+
+Comment: WebFX website (http://webfx.eae.net/license.html) states that their
+ components were relicensed under Apache Software License 2.0 (Apache-2.0),
+ allowing anyone to use them free of charge.
+
+Files: cobertura/src/main/resources/net/sourceforge/cobertura/reporting/html/files/stringbuilder.js
+Copyright: 1998-2002 Erik Arvidsson
+License: WebFX-Non-Commercial-License or WebFX-Commercial-License or GPL-2+
+Comment: WebFX website (http://webfx.eae.net/license.html) states that their
+ components were relicensed under Apache Software License 2.0 (Apache-2.0),
+ allowing anyone to use them free of charge.
+
+Files: cobertura/src/main/resources/net/sourceforge/cobertura/reporting/html/files/customsorttypes.js
+Copyright: 2005 Mark Doliner
+           2005 Olivier Parent
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/util/StringUtil.java
+Copyright: 2005 Jeremy Thomerson
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/util/CommandLineBuilder.java
+Copyright: 2005 Grzegorz Lukasik
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/util/FileFinder.java
+Copyright: 2005 Jeremy Thomerson
+           2005 Grzegorz Lukasik
+           2009 Charlie Squires
+           2009 John Lewis
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/util/RegexUtil.java
+Copyright: 2005 Mark Doliner
+           2006 John Lewis
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/util/FileLocker.java
+Copyright: 2006 John Lewis
+           2006 Mark Doliner
+           2009 Chris van Es
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/util/Header.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Erik Dick
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/util/ArchiveUtil.java
+Copyright: 2005 Grzegorz Lukasik
+           2006 John Lewis
+           2006 Mark Doliner
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/util/ConfigurationUtil.java
+Copyright: 2007 Joakim Erdfelt
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/util/IOUtil.java
+Copyright: 2005 Grzegorz Lukasik
+           2006 John Lewis
+           2007 Ignat Zapolsky
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/util/Source.java
+Copyright: 2009 John Lewis
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/JumpData.java
+Copyright: 2006 Jiri Mares
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/PackageData.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Jeremy Thomerson
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/CoverageDataFileHandler.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2007 Joakim Erdfelt
+           2007 Ignat Zapolsky
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/SwitchData.java
+Copyright: 2006 Jiri Mares
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/SourceFileData.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Jeremy Thomerson
+           2006 Jiri Mares
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/ClassData.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2006 Jiri Mares
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/ProjectData.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Grzegorz Lukasik
+           2005 Björn Beskow
+           2006 John Lewis
+           2009 Chris van Es
+           2009 Ed Randall
+           2010 Charlie Squires
+           2010 Piotr Tabor
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/BranchCoverageData.java
+Copyright: 2006 Jiri Mares
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/CoverageDataContainer.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Jeremy Thomerson
+           2005 Mark Sinke
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/LineData.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Mark Sinke
+           2006 Jiri Mares
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/SaveTimer.java
+Copyright: 2005 Mark Doliner
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/CoverageData.java
+Copyright: 2005 Mark Doliner
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/coveragedata/TouchCollector.java
+Copyright: 2010 Piotr Tabor
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/instrument/Archive.java
+Copyright: 2006 John Lewis
+           2006 Mark Doliner
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/instrument/CoberturaFile.java
+Copyright: 2006 John Lewis
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/instrument/Main.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Joakim Erdfelt
+           2005 Grzegorz Lukasik
+           2006 John Lewis
+           2006 Jiri Mares
+License: GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/instrument/ClassPattern.java
+Copyright: 2006 John Lewis
+License: Apache-1.1 or GPL-2+
+
+Files: cobertura/src/main/java/net/sourceforge/cobertura/merge/Main.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2005 Joakim Erdfelt
+           2005 Mark Sinke
+           2005 Grzegorz Lukasik
+License: GPL-2+
+
+Files: cobertura/src/test/resources/examples/functionaltest1/src/test/first/Test.java
+       cobertura/src/test/resources/examples/functionaltest1/src/test/second/B.java
+       cobertura/src/test/resources/examples/functionaltest1/src/test/first/B.java
+       cobertura/src/test/resources/examples/functionaltest1/src/test/second/A.java
+Copyright: 2006 John Lewis
+License: GPL-2+ or Apache-1.1
+
+Files: cobertura/src/test/resources/examples/functionalconditiontest/src/test/condition/Test.java
+Copyright: 2007 John Lewis
+License: GPL-2+ or Apache-1.1
+
+Files: cobertura/src/test/resources/examples/functionaltest1/src/test/first/A.java
+Copyright: 2008 John Lewis
+License: GPL-2+ or Apache-1.1
+
+Files: cobertura/src/test/resources/examples/basic/src/com/example/simple/SimpleTest.java
+       cobertura/src/test/resources/examples/basic/src/com/example/simple/Simple.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+License: GPL-2+
+
+Files: cobertura/src/test/resources/examples/groovy/src/com/example/simple/SimpleTest.groovy
+       cobertura/src/test/resources/examples/groovy/src/com/example/simple/Simple.groovy
+Copyright: 2003 jcoverage ltd.
+           2006 Mark Doliner
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/reporting/xml/XMLReportTest.java
+       cobertura/src/test/java/net/sourceforge/cobertura/reporting/JUnitXMLParserEntityResolver.java
+       cobertura/src/test/java/net/sourceforge/cobertura/reporting/html/JavaToHtmlTest.java
+       cobertura/src/test/java/net/sourceforge/cobertura/reporting/html/files/CopyFilesTest.java
+       cobertura/src/test/java/net/sourceforge/cobertura/coveragedata/CoverageDataFileHandlerTest.java
+Copyright: 2005 Mark Doliner
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/coveragedata/ProjectDataTest.java
+Copyright: 2005 Mark Doliner
+           2010 Piotr Tabor
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/util/StringUtilTest.java
+       cobertura/src/test/java/net/sourceforge/cobertura/util/FileFlooder.java
+Copyright: 2005 Jeremy Thomerson
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/thread/test/*
+Copyright: 2009 John Lewis
+License: Apache-1.1
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/ant/FunctionalTest.java
+Copyright: 2008 John Lewis
+           2006 Mark Doliner
+License: GPL-2+ or Apache-1.1
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/ant/Util.java
+       cobertura/src/test/java/net/sourceforge/cobertura/ant/FunctionalConditionCoverageTest.java
+Copyright: 2006 John Lewis
+           2006 Mark Doliner
+License: GPL-2+ or Apache-1.1
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/reporting/ComplexityCalculatorTest.java
+       cobertura/src/test/java/net/sourceforge/cobertura/util/IOUtilTest.java
+       cobertura/src/test/java/net/sourceforge/cobertura/merge/MergeMainTest.java
+Copyright: 2005 Grzegorz Lukasik
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/reporting/JUnitXMLHelper.java
+Copyright: 2006 Mark Doliner
+           2006 John Lewis
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/reporting/JUnitXMLParserErrorHandler.java
+Copyright: 2005 Mark Doliner
+           2005 Grzegorz Lukasik
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/util/FileFinderTest.java
+Copyright: 2005 James Seigel
+           2005 Grzegorz Lukasik
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/util/CommandLineBuilderTest.java
+Copyright: 2005 Grzegorz Lukasik
+License: GPL-2+ or Apache-1.1
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/util/FileFixture.java
+Copyright: 2005 James Seigel
+           2005 Grzegorz Lukasik
+           2008 John Lewis
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/coveragedata/SwitchDataTest.java
+       cobertura/src/test/java/net/sourceforge/cobertura/coveragedata/JumpDataTest.java
+Copyright: 2006 Jiri Mares
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/coveragedata/LineDataTest.java
+       cobertura/src/test/java/net/sourceforge/cobertura/coveragedata/PackageDataTest.java
+Copyright: 2005 Mark Doliner
+           2006 Jiri Mares
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/coveragedata/ClassDataTest.java
+Copyright: 2003 jcoverage ltd.
+           2005 Mark Doliner
+           2006 Jiri Mares
+License: GPL-2+
+
+Files: cobertura/src/test/java/net/sourceforge/cobertura/merge/MergeTest.java
+Copyright: 2005 Grzegorz Lukasik
+           2006 Jiri Mares
+License: GPL-2+
+
+Files: debian/*
+Copyright: 2010-2017, Miguel Landaeta <nomadium@debian.org>
+           2010, Gabriele Giacone <1o5g4r8o@gmail.com>
+           2011, James Page
+           2014-2017, Emmanuel Bourg <ebourg@apache.org>
+License: GPL-2+

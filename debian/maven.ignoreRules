@@ -1,0 +1,21 @@
+com.code54.mojo buildversion-plugin
+com.github.jeluard plantuml-maven-plugin
+org.apache.maven.plugins maven-assembly-plugin
+org.apache.maven.plugins maven-checkstyle-plugin
+org.apache.maven.plugins maven-enforcer-plugin
+org.apache.maven.plugins maven-failsafe-plugin
+org.apache.maven.plugins maven-javadoc-plugin
+org.apache.maven.plugins maven-pmd-plugin
+org.apache.maven.plugins maven-release-plugin
+org.apache.maven.plugins maven-site-plugin
+org.apache.maven.plugins maven-war-plugin
+org.apache.maven.scm maven-scm-provider-gitexe
+org.apache.maven.scm maven-scm-provider-hg
+org.apache.servicemix.tooling depends-maven-plugin
+org.codehaus.mojo findbugs-maven-plugin
+org.codehaus.mojo license-maven-plugin
+* * * * * test
+
+com.sun tools
+org.mortbay.jetty jetty
+org.mortbay.jetty jetty-util
